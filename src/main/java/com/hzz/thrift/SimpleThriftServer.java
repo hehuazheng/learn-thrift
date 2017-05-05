@@ -17,7 +17,7 @@ public class SimpleThriftServer {
     public static void main(String[] args) throws TTransportException {
         SimpleServiceImpl impl = new SimpleServiceImpl();
         processor = new SimpleService.Processor<>(impl);
-        TServerTransport transport = new TServerSocket(9090);
+        TServerTransport transport = new TServerSocket(9001);
         TServer server = new TSimpleServer(new TServer.Args(transport).processor(processor));
         System.out.println("starting simple server");
         server.serve();

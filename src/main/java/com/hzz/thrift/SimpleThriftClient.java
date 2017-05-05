@@ -13,7 +13,7 @@ import thrift.api.SimpleService;
  */
 public class SimpleThriftClient {
     public static void main(String[] args) throws TException {
-        TTransport transport = new TSocket("localhost", 9090);
+        TTransport transport = new TSocket("localhost", 9001);
         transport.open();
         TProtocol protocol = new TBinaryProtocol(transport);
         SimpleService.Client client = new SimpleService.Client(protocol);
