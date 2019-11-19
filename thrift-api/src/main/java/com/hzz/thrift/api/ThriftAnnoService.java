@@ -1,4 +1,4 @@
-package com.hzz.thrift;
+package com.hzz.thrift.api;
 
 import com.facebook.swift.service.ThriftMethod;
 import com.facebook.swift.service.ThriftService;

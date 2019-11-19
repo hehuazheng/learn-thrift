@@ -3,6 +3,7 @@ package com.hzz.thrift;
 import com.facebook.nifty.client.FramedClientConnector;
 import com.facebook.swift.service.ThriftClientManager;
 import com.google.common.net.HostAndPort;
+import com.hzz.thrift.api.ThriftAnnoService;
 import org.apache.thrift.TException;
 
 import java.util.concurrent.ExecutionException;

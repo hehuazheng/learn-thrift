@@ -10,6 +10,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import com.hzz.thrift.api.CustomData;
 import com.hzz.thrift.api.CustomType;
+import com.hzz.thrift.api.ThriftAnnoService;
 import org.apache.thrift.TException;
 
 import java.util.List;
@@ -50,7 +51,11 @@ public class ThriftAnnoServer {
             cd2.setId(2);
             cd2.setType(CustomType.TYPE2);
 
-            return Lists.newArrayList(cd1, cd2);
+            CustomData cd3 = new CustomData();
+            cd3.setId(3);
+            cd3.setType(CustomType.TYPE3);
+
+            return Lists.newArrayList(cd1, cd2, cd3);
         }
     }
 }
