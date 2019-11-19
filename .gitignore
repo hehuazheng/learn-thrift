@@ -2,3 +2,5 @@
 /.idea/
 /learn-thrift.iml
 /target/
+**/*.iml
+**/target/

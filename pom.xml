@@ -5,7 +5,10 @@
     <groupId>com.hzz</groupId>
     <artifactId>learn-thrift</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>thrift-api</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <name>learn-thrift</name>
     <url>http://maven.apache.org</url>
@@ -46,6 +49,11 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>com.hzz</groupId>
+            <artifactId>thrift-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>com.facebook.swift</groupId>
             <artifactId>swift-codec</artifactId>
